@@ -107,21 +107,6 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(
                       height: 50,
                     ),
-                    loading
-                        ? const CircularProgressIndicator()
-                        : Column(
-                            children: [
-                              ...allUsers.map(
-                                (e) => Card(
-                                  key: Key(e.id.toString()),
-                                  child: ListTile(
-                                    leading: Image.network(e.avatarUrl),
-                                    title: Text(e.login),
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
                   ],
                 ),
               ),
